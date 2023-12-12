@@ -4,7 +4,7 @@
 
 
 
-<img src="utils/images/Vulseye.jpeg" alt="Vulseye" style="zoom:25%;" />
+<img src="utils/images/Vulseye.jpeg" alt="Vulseye"  />
 
 
 
@@ -18,9 +18,9 @@
    pip3 install py-solc-x
    pip3 install crytic_compile
    #replace the fixed solcx package with the package in your local path
-   cp -r utils/solcx #your-python-path/site-packages/solcx
+   cp -r utils/solcx your-python-path/site-packages/solcx
    #replace the fixed crytic_compile package with the package in your local path
-   cp -r utils/crytic_compile #your-python-path/site-packages/crytic_compile
+   cp -r utils/crytic_compile your-python-path/site-packages/crytic_compile
    ```
 
 2. #### Slither
@@ -30,7 +30,7 @@
    ```shell
    pip3 install slither-analyzer
    #replace the modified crytic_compile package with the package in your local path
-   cp -r utils/slither #your-python-path/site-packages/slither_analyzer-0.x.x-py3.x.egg/slither
+   cp -r utils/slither your-python-path/site-packages/slither_analyzer-0.x.x-py3.x.egg/slither
    ```
 
 3. #### Z3 Prover
