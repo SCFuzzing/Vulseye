@@ -16,9 +16,12 @@
 
    ```shell
    pip3 install py-solc-x
+   
    pip3 install crytic_compile
+   
    #replace the fixed solcx package with the package in your local path
    cp -r utils/solcx your-python-path/site-packages/solcx
+   
    #replace the fixed crytic_compile package with the package in your local path
    cp -r utils/crytic_compile your-python-path/site-packages/crytic_compile
    ```
@@ -29,6 +32,7 @@
 
    ```shell
    pip3 install slither-analyzer
+   
    #replace the modified crytic_compile package with the package in your local path
    cp -r utils/slither your-python-path/site-packages/slither_analyzer-0.x.x-py3.x.egg/slither
    ```
@@ -48,17 +52,18 @@
 
 ```shell
 cd Vulseye/tools
-./main.sh demo/reentrancy.sol
+
 #the default fuzz generation is 80
+./main.sh demo/reentrancy.sol
 ```
 
 The overall results are recorded in `Vulseye/tools/res.txt`. 
 
 The source_map is recorded in `Vulseye/tools/srcmap.txt`.
 
-The information of code targets and block distance is recorded in `Vulseye/tools/CodeDistance.txt`.
+The information of code targets and block distance is recorded in `Vulseye/tools/CodeDistance.json`.
 
-The information of state targets is recorded in `Vulseye/tools/StateDistance.txt`.
+The information of state targets is recorded in `Vulseye/tools/StateDistance.json`.
 
 Other running informations are recorded in `Vulseye/tools/distance.txt` and `Vulseye/tools/coverage.txt`.
 
