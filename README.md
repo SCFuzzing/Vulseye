@@ -52,15 +52,15 @@ cd Vulseye/tools
 #the default fuzz generation is 80
 ```
 
-The overall results are recoded in `Vulseye/tools/res.txt`. 
+The overall results are recorded in `Vulseye/tools/res.txt`. 
 
-The source_map is recoded in `Vulseye/tools/srcmap.txt`.
+The source_map is recorded in `Vulseye/tools/srcmap.txt`.
 
-The information of code targets and block distance is recoded in `Vulseye/tools/CodeDistance.txt`.
+The information of code targets and block distance is recorded in `Vulseye/tools/CodeDistance.txt`.
 
-The information of state targets is recoded in `Vulseye/tools/StateDistance.txt`.
+The information of state targets is recorded in `Vulseye/tools/StateDistance.txt`.
 
-Other running informations are recoded in `Vulseye/tools/distance.txt` and `Vulseye/tools/coverage.txt`.
+Other running informations are recorded in `Vulseye/tools/distance.txt` and `Vulseye/tools/coverage.txt`.
 
 
 
