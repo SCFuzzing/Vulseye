@@ -4,7 +4,7 @@
 
 
 
-<img src="/home/lrc/myproject/Vulseye/utils/images/Vulseye.jpeg" alt="Vulseye" style="zoom:25%;" />
+<img src="utils/images/Vulseye.jpeg" alt="Vulseye" style="zoom:25%;" />
 
 
 
