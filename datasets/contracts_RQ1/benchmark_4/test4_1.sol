@@ -7,50 +7,48 @@ contract test{
     uint v3 = 0;
     uint v4 = 0;
     uint v5 = 0;
-    uint v6 = 0;
 
     function invest1() payable public{
         userBalance[msg.sender] = msg.value;
     }
 
-    function invest2(uint _v1,uint _v2,uint _v3,uint _v4, uint _v5,uint _v6) payable public{
+    function invest2(uint _v1,uint _v2,uint _v3,uint _v4, uint _v5) payable public{
         v1 = _v1;
         v2 = _v2;
         v3 = _v3;
         v4 = _v4;
         v5 = _v5;
-        v6 = _v6;
+
         userBalance[msg.sender] = msg.value;
-            if (v1 >= 19 && v1 <= 22 && v2 >= 2 && v2 <= 13 && v3 >= 19 && v3 <= 25 && v4 >= 13 && v4 <= 22 && v5 >= 12 && v5 <= 19 && v6 >= 9 && v6 <= 24){
+            if (v1 >= 19 && v1 <= 22 && v2 >= 2 && v2 <= 13 && v3 >= 19 && v3 <= 25 && v4 >= 13 && v4 <= 22 && v5 >= 12 && v5 <= 19){
        invest1();
 }
             
     }
 
 
-        function invest3(uint _v1,uint _v2,uint _v3,uint _v4, uint _v5,uint _v6) payable public{
+        function invest3(uint _v1,uint _v2,uint _v3,uint _v4, uint _v5) payable public{
         v1 = _v1;
         v2 = _v2;
         v3 = _v3;
         v4 = _v4;
         v5 = _v5;
-        v6 = _v6;
+
         userBalance[msg.sender] = msg.value;
-            if (v1 >= 9 && v1 <= 22 && v2 >= 34 && v2 <= 49 && v3 >= 12 && v3 <= 15 && v4 >= 3 && v4 <= 21 && v5 >= 2 && v5 <= 9 && v6 >= 19 && v6 <= 24){
+            if (v1 >= 9 && v1 <= 22 && v2 >= 34 && v2 <= 49 && v3 >= 12 && v3 <= 15 && v4 >= 3 && v4 <= 21 && v5 >= 2 && v5 <= 9){
        v1 = _v1 + _v2;
        v2 = _v1 + _v2 + _v3 + _v4;
 }
         }
 
-    function invest4(uint _v1,uint _v2,uint _v3,uint _v4, uint _v5,uint _v6) payable public{
+    function invest4(uint _v1,uint _v2,uint _v3,uint _v4, uint _v5) payable public{
         v1 = _v1;
         v2 = _v2;
         v3 = _v3;
         v4 = _v4;
         v5 = _v5;
-        v6 = _v6;
         userBalance[msg.sender] = msg.value;
-            if (v1 >= 4 && v1 <= 11 && v2 >= 4 && v2 <= 9 && v3 >= 12 && v3 <= 15 && v4 >= 3 && v4 <= 20 && v5 >= 5 && v5 <= 15 && v6 >= 9 && v6 <= 24){
+            if (v1 >= 4 && v1 <= 11 && v2 >= 4 && v2 <= 9 && v3 >= 12 && v3 <= 15 && v4 >= 3 && v4 <= 20 && v5 >= 5 && v5 <= 15){
        v1 = _v1 + _v2;
        v2 = _v1 + _v2 + _v3;
 
@@ -59,16 +57,15 @@ contract test{
 
     }
 
-        function invest5(uint _v1,uint _v2,uint _v3,uint _v4, uint _v5,uint _v6) payable public{
+        function invest5(uint _v1,uint _v2,uint _v3,uint _v4, uint _v5) payable public{
         v1 = _v1;
         v2 = _v2;
         v3 = _v3;
         v4 = _v4;
         v5 = _v5;
-        v6 = _v6;
         userBalance[msg.sender] = msg.value;
-            if (v1 >= 4 && v1 <= 11 && v2 >= 4 && v2 <= 9 && v3 >= 12 && v3 <= 15 && v4 >= 3 && v4 <= 20 && v5 >= 5 && v5 <= 15 && v6 >= 9 && v6 <= 24){
-       withdrawBalance(_v1,_v2,_v3,_v4,_v5,_v6);
+            if (v1 >= 4 && v1 <= 11 && v2 >= 4 && v2 <= 9 && v3 >= 12 && v3 <= 15 && v4 >= 3 && v4 <= 20 && v5 >= 5 && v5 <= 15){
+       withdrawBalance(_v1,_v2,_v3,_v4,_v5);
 
 }
 
@@ -76,15 +73,14 @@ contract test{
     }
 
 
-    function withdrawBalance(uint _v1,uint _v2,uint _v3,uint _v4, uint _v5,uint _v6) public {
+    function withdrawBalance(uint _v1,uint _v2,uint _v3,uint _v4, uint _v5) public {
 	    v1 = _v1;
         v2 = _v2;
         v3 = _v3;
         v4 = _v4;
         v5 = _v5;
-        v6 = _v6;
 
-    if (v1 >= 3 && v1 <= 10 && v2 >= 1 && v2 <= 5 && v3 >= 2 && v3 <= 15 && v4 >= 10 && v4 <= 20 && v5 >= 14 && v5 <= 23 && v6 >= 19 && v6 <= 22){
+    if (v1 >= 3 && v1 <= 10 && v2 >= 1 && v2 <= 5 && v3 >= 2 && v3 <= 15 && v4 >= 10 && v4 <= 20 && v5 >= 14 && v5 <= 23){
        msg.sender.call{value:1}("");
 
 }

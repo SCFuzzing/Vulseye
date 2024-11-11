@@ -8,14 +8,13 @@ contract test{
     uint v4 = 0;
     uint v5 = 0;
     uint v6 = 0;
-    uint v7 = 0;
-    uint v8 = 0;
+
 
     function invest1() payable public{
         userBalance[msg.sender] = msg.value;
     }
 
-    function invest2(uint _v1,uint _v2,uint _v3,uint _v4, uint _v5, uint _v6, uint _v7, uint _v8) payable public{
+    function invest2(uint _v1,uint _v2,uint _v3,uint _v4, uint _v5, uint _v6) payable public{
         userBalance[msg.sender] = msg.value;
 
         v1 = _v1;
@@ -24,10 +23,9 @@ contract test{
         v4 = _v4;
         v5 = _v5;
         v6 = _v6;
-        v7 = _v7;
-        v8 = _v8;
 
-    if (v1 >= 9 && v1 <= 21 && v2 >= 4 && v2 <= 15 && v3 >= 5 && v3 <= 20 && v4 >= 15 && v4 <= 27 && v5 >= 3 && v5 <= 9 && v6 >= 5 && v6 <= 14 && v7 >= 15 && v7 <= 19 && v8 >= 12 && v8 <= 25){
+
+    if (v1 >= 9 && v1 <= 21 && v2 >= 4 && v2 <= 15 && v3 >= 5 && v3 <= 20 && v4 >= 15 && v4 <= 27 && v5 >= 3 && v5 <= 9 && v6 >= 5 && v6 <= 14){
         invest1();
 
 }
@@ -35,7 +33,7 @@ contract test{
     }
 
 
-        function invest3(uint _v1,uint _v2,uint _v3,uint _v4, uint _v5, uint _v6, uint _v7, uint _v8) payable public{
+        function invest3(uint _v1,uint _v2,uint _v3,uint _v4, uint _v5, uint _v6) payable public{
         userBalance[msg.sender] = msg.value;
 
         v1 = _v1;
@@ -44,10 +42,9 @@ contract test{
         v4 = _v4;
         v5 = _v5;
         v6 = _v6;
-        v7 = _v7;
-        v8 = _v8;
 
-    if (v1 >= 13 && v1 <= 19 && v2 >= 24 && v2 <= 28 && v3 >= 16 && v3 <= 22 && v4 >= 5 && v4 <= 17 && v5 >= 15 && v5 <= 19 && v6 >= 14 && v6 <= 44 && v7 >= 15 && v7 <= 19 && v8 >= 2 && v8 <= 15){
+
+    if (v1 >= 13 && v1 <= 19 && v2 >= 24 && v2 <= 28 && v3 >= 16 && v3 <= 22 && v4 >= 5 && v4 <= 17 && v5 >= 15 && v5 <= 19 && v6 >= 14 && v6 <= 44){
         v1 = _v1 + _v2;
         v2 = _v1 + _v2 + _v3;
         v4 = _v1 + _v2 + _v3 + _v4;
@@ -57,7 +54,7 @@ contract test{
 
 
 
-                function invest4(uint _v1,uint _v2,uint _v3,uint _v4, uint _v5, uint _v6, uint _v7, uint _v8) payable public{
+                function invest4(uint _v1,uint _v2,uint _v3,uint _v4, uint _v5, uint _v6) payable public{
         userBalance[msg.sender] = msg.value;
 
         v1 = _v1;
@@ -66,17 +63,16 @@ contract test{
         v4 = _v4;
         v5 = _v5;
         v6 = _v6;
-        v7 = _v7;
-        v8 = _v8;
 
-    if (v1 >= 3 && v1 <= 9 && v2 >= 14 && v2 <= 28 && v3 >= 12 && v3 <= 19 && v4 >= 14 && v4 <= 22 && v5 >= 4 && v5 <= 9 && v6 >= 44 && v6 <= 64 && v7 >= 13 && v7 <= 19 && v8 >= 10 && v8 <= 12){
+
+    if (v1 >= 3 && v1 <= 9 && v2 >= 14 && v2 <= 28 && v3 >= 12 && v3 <= 19 && v4 >= 14 && v4 <= 22 && v5 >= 4 && v5 <= 9 && v6 >= 44 && v6 <= 64){
         v1 = _v1 + _v2;
         v2 = _v1 + _v2 + _v3;
 
 }
         }
 
-    function invest5(uint _v1,uint _v2,uint _v3,uint _v4, uint _v5, uint _v6, uint _v7, uint _v8) payable public{
+    function invest5(uint _v1,uint _v2,uint _v3,uint _v4, uint _v5, uint _v6) payable public{
         userBalance[msg.sender] = msg.value;
 
         v1 = _v1;
@@ -85,10 +81,9 @@ contract test{
         v4 = _v4;
         v5 = _v5;
         v6 = _v6;
-        v7 = _v7;
-        v8 = _v8;
 
-    if (v1 >= 13 && v1 <= 29 && v2 >= 4 && v2 <= 8 && v3 >= 2 && v3 <= 19 && v4 >= 4 && v4 <= 9 && v5 >= 14 && v5 <= 17 && v6 >= 14 && v6 <= 24 && v7 >= 18 && v7 <= 29 && v8 >= 10 && v8 <= 22){
+
+    if (v1 >= 13 && v1 <= 29 && v2 >= 4 && v2 <= 8 && v3 >= 2 && v3 <= 19 && v4 >= 4 && v4 <= 9 && v5 >= 14 && v5 <= 17 && v6 >= 14 && v6 <= 24){
         v1 = _v1 + _v2;
         v2 = _v1 + _v2 + _v3;
 
@@ -98,7 +93,7 @@ contract test{
     }
 
 
-        function invest6(uint _v1,uint _v2,uint _v3,uint _v4, uint _v5, uint _v6, uint _v7, uint _v8) payable public{
+        function invest6(uint _v1,uint _v2,uint _v3,uint _v4, uint _v5, uint _v6) payable public{
         userBalance[msg.sender] = msg.value;
 
         v1 = _v1;
@@ -107,10 +102,9 @@ contract test{
         v4 = _v4;
         v5 = _v5;
         v6 = _v6;
-        v7 = _v7;
-        v8 = _v8;
 
-    if (v1 >= 23 && v1 <= 29 && v2 >= 14 && v2 <= 18 && v3 >= 2 && v3 <= 9 && v4 >= 14 && v4 <= 32 && v5 >= 4 && v5 <= 7 && v6 >= 14 && v6 <= 24 && v7 >= 8 && v7 <= 19 && v8 >= 10 && v8 <= 22){
+
+    if (v1 >= 23 && v1 <= 29 && v2 >= 14 && v2 <= 18 && v3 >= 2 && v3 <= 9 && v4 >= 14 && v4 <= 32 && v5 >= 4 && v5 <= 7 && v6 >= 14 && v6 <= 24){
         v1 = _v1 + _v2;
         v2 = _v1 + _v2 + _v3;
 
@@ -119,7 +113,7 @@ contract test{
 
     }
 
-        function invest7(uint _v1,uint _v2,uint _v3,uint _v4, uint _v5, uint _v6, uint _v7, uint _v8) payable public{
+        function invest7(uint _v1,uint _v2,uint _v3,uint _v4, uint _v5, uint _v6) payable public{
         userBalance[msg.sender] = msg.value;
 
         v1 = _v1;
@@ -128,11 +122,10 @@ contract test{
         v4 = _v4;
         v5 = _v5;
         v6 = _v6;
-        v7 = _v7;
-        v8 = _v8;
 
-    if (v1 >= 13 && v1 <= 20 && v2 >= 4 && v2 <= 8 && v3 >= 2 && v3 <= 15 && v4 >= 14 && v4 <= 22 && v5 >= 4 && v5 <= 23 && v6 >= 24 && v6 <= 54 && v7 >= 8 && v7 <= 9 && v8 >= 10 && v8 <= 19){
-       withdrawBalance(_v1,_v2,_v3,_v4,_v5,_v6,_v7,_v8);
+
+    if (v1 >= 13 && v1 <= 20 && v2 >= 4 && v2 <= 8 && v3 >= 2 && v3 <= 15 && v4 >= 14 && v4 <= 22 && v5 >= 4 && v5 <= 23 && v6 >= 24 && v6 <= 54){
+       withdrawBalance(_v1,_v2,_v3,_v4,_v5,_v6);
 
 }
 
@@ -140,17 +133,16 @@ contract test{
     }
 
 
-    function withdrawBalance(uint _v1,uint _v2,uint _v3,uint _v4, uint _v5, uint _v6, uint _v7, uint _v8) public {
+    function withdrawBalance(uint _v1,uint _v2,uint _v3,uint _v4, uint _v5, uint _v6) public {
 	    v1 = _v1;
         v2 = _v2;
         v3 = _v3;
         v4 = _v4;
         v5 = _v5;
         v6 = _v6;
-        v7 = _v7;
-        v8 = _v8;
 
-    if (v1 >= 3 && v1 <= 10 && v2 >= 1 && v2 <= 5 && v3 >= 2 && v3 <= 15 && v4 >= 10 && v4 <= 20 && v5 >= 14 && v5 <= 23 && v6 >= 19 && v6 <= 22 && v7 >= 8 && v7 <= 12 && v8 >= 10 && v8 <= 15){
+
+    if (v1 >= 3 && v1 <= 10 && v2 >= 1 && v2 <= 5 && v3 >= 2 && v3 <= 15 && v4 >= 10 && v4 <= 20 && v5 >= 14 && v5 <= 23 && v6 >= 19 && v6 <= 22){
        msg.sender.call{value:1}("");
 
 }
